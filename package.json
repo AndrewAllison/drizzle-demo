@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint:fix": "eslint . --fix",
-    "run": "ts-node src/index.ts"
+    "run": "ts-node src/index.ts",
+    "gitleaks": "mkdir -p ./output && gitleaks protect -r ./output/leaks-report.json"
   },
   "keywords": [],
   "author": "",
